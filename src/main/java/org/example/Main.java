@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
-
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -10,22 +8,17 @@ public class Main {
         showArray(arr);
 
         System.out.println("\nSorted array:");
-        int out[] = countingSort(arr, 9);
+        int[] out = countingSort(arr, 9);
 
         showArray(out);
 
     }
-
-
-
-
 
     /**
      * Sorts an array of integers using counting sort.
      * @param arr array to sort
      * @return sorted array
      */
-
     public static int[] countingSort(int[] arr) {
         // Initialize an array to store the count of each element in the input array.
         int[] count = new int[100];
